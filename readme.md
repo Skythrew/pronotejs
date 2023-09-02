@@ -2,6 +2,8 @@
 
 Ce projet est un portage de la bibliothèque pronotepy, initialement développée par [bain3](https://github.com/bain3/pronotepy), en JavaScript.
 
+Ce projet est basé sur le commit spécifique : [a43038ce08d51ad1c4dbf7345b6ff8fddd2c6b25](https://github.com/bain3/pronotepy/tree/a43038ce08d51ad1c4dbf7345b6ff8fddd2c6b25).
+
 ## Introduction
 
 [Pronotepy](https://github.com/bain3/pronotepy) est une bibliothèque Python conçue pour interagir avec l'API Pronote. Ce projet vise à offrir une version JavaScript de cette bibliothèque pour permettre son utilisation dans des environnements web, des applications mobiles, ou d'autres projets JavaScript.
