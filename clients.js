@@ -1,7 +1,6 @@
 const uuid4 = require("uuid4");
 const { PronoteAPIError } = require("./exceptions");
 const { Communication, Encryption } = require("./pronoteAPI");
-const { ClientInfo } = require("./dataClasses");
 
 
 class ClientBase {
@@ -166,7 +165,7 @@ class ClientBase {
             }
 
             this.parametres_utilisateur = this.post("ParametresUtilisateur");
-            this.info = new ClientInfo(
+            this.info = new dataClasses.ClientInfo(
                 this,
                 this.parametres_utilisateur.donneesSec.donnees.ressource
             );

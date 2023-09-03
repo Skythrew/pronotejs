@@ -14,6 +14,7 @@
     "cryptico": "^1.0.2",
     "crypto-js": "^4.1.1",
     "datetime": "^0.0.3",
+    "dotenv": "^16.3.1",
     "exceptions": "^0.1.1",
     "itertools": "^2.1.2",
     "jsdom": "^22.1.0",
