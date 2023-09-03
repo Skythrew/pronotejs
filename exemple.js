@@ -1,4 +1,5 @@
 require('dotenv').config();
+const { occitanie_toulouse } = require('./ent/ent');
 const pronotepy = require('./pronotepy');
 const { Client } = pronotepy
 const { DateTime } = require('luxon');
@@ -9,10 +10,11 @@ const { DateTime } = require('luxon');
 //      https://0000000a.index-education.net/pronote/eleve.html <-- GOOD
 //      https://0000000a.index-education.net/pronote/eleve.html?login=true <-- ONLY IF YOU HAVE AN ENT AND YOU KNOW YOUR IDS, ELSE REFER TO ENT PART OF README
 
-const client = new Client({pronote_url:process.env.PRONOTE_URL,
-  username: process.env.PRONOTE_USERNAME,
-  password: process.env.PRONOTE_PASSWORD,
-});
+const client = new Client(pronote_url=process.env.PRONOTE_URL,
+  username= process.env.PRONOTE_USERNAME,
+  password= process.env.PRONOTE_PASSWORD,
+  ent= occitanie_toulouse,
+);
 
 (async () => {
   try {

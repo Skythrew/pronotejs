@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.5.0",
+    "cheerio": "^1.0.0-rc.12",
     "cryptico": "^1.0.2",
     "crypto-js": "^4.1.1",
     "datetime": "^0.0.3",
@@ -22,6 +23,7 @@
     "logging": "^3.3.0",
     "luxon": "^3.4.2",
     "re": "^0.1.4",
+    "request-promise": "^4.2.6",
     "requests": "^0.3.0",
     "typing": "^0.1.9",
     "unittest": "^1.0.0",

@@ -5,7 +5,7 @@ const { Communication, Encryption } = require("./pronoteAPI");
 
 class ClientBase {
     constructor(pronote_url, username = "", password = "", ent = null, qr_code = false) {
-        console.log("INIT");
+        console.log("INIT clientbase with : username = " + username + " password = " + password);
         if (!(password.length + username.length)) {
             throw new PronoteAPIError(
                 "Please provide login credentials. Cookies are None, and username and password are empty."
@@ -273,7 +273,7 @@ class Client extends ClientBase {
      * @param {string} password
      * @param {function} ent - Cookies for ENT connections
      */
-    constructor({pronote_url, username = "", password = "", ent = null, qr_code = false}) {
+    constructor(pronote_url, username = "", password = "", ent = null, qr_code = false) {
         console.log("INIT with : username = " + username + " password = " + password);
         super(pronote_url, username, password, ent, qr_code);
     }
